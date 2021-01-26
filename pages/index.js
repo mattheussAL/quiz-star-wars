@@ -1,65 +1,50 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import db from '../db.json';
+
+import Footer from '../src/components/Footer';
+import QuizLogo from '../src/components/QuizLogo';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizBackground from '../src/components/QuizBackground';
+import { Widget, QuizContainer } from '../src/components/Widget';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <QuizBackground BackgroundImage={db.bg}>
+        <QuizLogo />
+        <QuizContainer >
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+          <Widget>
+            <Widget.Header><h1>{db.title}</h1></Widget.Header>
+            <Widget.Content><p>{db.description}</p></Widget.Content>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+            <form>
+              <input 
+                type="text"
+                placeholder="Digite seu nome padalwan :)"
+                required
+              />
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+              <button type="submit" id="play" name="play">Jogar</button>
+            </form>
+          </Widget>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Widget>
+            <Widget.Header><h1>Quiz da Galera</h1></Widget.Header>
+            <Widget.Content>
+              <ul>
+                <li><a href="https://quiz-imersao-react.vercel.app" target="_blank">Data Science Quiz</a></li>
+                <li><a href="https://imersao-react-alura.malufell.vercel.app" target="_blank">How I Met Your Mother!</a></li>
+                <li><a href="https://quiz-padrao-projetos.thassya.vercel.app" target="_blank">Padrão de Projetos</a></li>
+                <li><a href="https://aluraquiz-base.henrique1818.vercel.app" target="_blank">Vingadores</a></li>
+              </ul>
+            </Widget.Content>
+          </Widget>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Footer />
+        </QuizContainer>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      </QuizBackground>
+    </>
   )
 }

@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import db from '../db.json';
+import { GlobalStyles } from '../src/styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const theme = db.theme;
+
+export default function App({ Component, pageProps }) {
+
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  )
 }
-
-export default MyApp
