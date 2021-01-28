@@ -1,120 +1,85 @@
 import styled from 'styled-components';
 
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
+const Widget = styled.div`
+  margin-bottom: 22px;
+  padding-bottom: 18px;
 
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
-export const Widget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
-
-  background: #000a24e8;
-
-  border-radius: 20px 20px 0 0 ;
-  box-shadow: 0 0 100px #000a24e8;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.colors.mainBg};
 
   overflow: hidden;
 
-  h1 {
+  h1, h2, h3 {
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
-
-    margin-right: 9rem;
-    margin-bottom: 0;
   }
 
-  p { 
-    font-size: .9rem;
+  h2 {
+    margin-bottom: ${props => props.quiz ? '12px' : '12px'}
+  }
+
+  p {
+    font-size: 14px;
     font-weight: 400;
     line-height: 1;
   }
-
-  form {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: -2rem;
-    padding: 2rem;
-  }
-
-  form input {
-    padding: 12px;
-    border: 1px solid rgba(255,255,255, .1);
-    border-radius: .2rem;
-    margin-bottom: 2rem;
-    background: transparent;
-
-    &::placeholder{
-      color: rgba(255,255,255, .4);
-    }
-  }
-
-  button {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #FFF;
-    padding: .6rem;
-    background: #ccc;
-    border: none;
-    border-radius: .2rem;
-
-    transition: all .2s;
-
-    cursor: pointer;
-
-    &:hover {
-      background: #c1c1c1;
-    }
-  } 
 `;
 
 Widget.Header = styled.header`
-  * { margin: 0 };
-
   padding: 18px 32px;
 
-  background: #33168bf8;
-
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
+  background-color: ${({ theme }) => theme.colors.primary};  
+
+  * { margin: 0 }
 `;
 
 Widget.Content = styled.div`
-  padding: 12px 16px 16px 16px;
+  padding: 16px 32px 20px 32px;
 
-  ul {
+  ul { 
     list-style: none;
-     
+
     li {
       text-align: center;
+      margin-top: 4px;
+      padding: 2px;
 
-      margin-bottom: 8px;
-      padding: .2rem;
-
-      border-radius: 2px;
-
-      background: #33168bf8;
+      border: none;
+      border-radius: 20px;
+      background: ${({ theme }) => theme.colors.primary};
 
       cursor: pointer;
-    }
-
-    a {
-      text-decoration: none;
-
-      color: #F2F2F2;
+      
+      a {
+        color: ${({ theme }) => theme.colors.contrastText};
+        text-decoration: none;
+      }
     }
   }
-  
-
-  & > *::first-child { margin-top: 0 }
-  & > *::last-child { margin-bottom: 0 }
 `;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
+export default Widget;

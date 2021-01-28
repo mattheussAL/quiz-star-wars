@@ -1,15 +1,37 @@
+import React, { useState } from 'react'; 
+import { useRouter } from 'next/router';
 import db from '../db.json';
 
+import Head from 'next/head';
+import Input from '../src/components/Input';
+import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
+import Button from '../src/components/Button';
 import QuizLogo from '../src/components/QuizLogo';
 import GitHubCorner from '../src/components/GitHubCorner';
+import QuizContainer from '../src/components/QuizContainer';
 import QuizBackground from '../src/components/QuizBackground';
-import { Widget, QuizContainer } from '../src/components/Widget';
 
 export default function Home() {
+  const route = useRouter();
+  const [name, setName] = useState('')
+  
+  function handleEventSubmit(event) {
+    event.preventDefault()
+
+    route.push(`/quiz?name=${name}`);
+  }
+
+  function handleChange(element) {
+    setName(element.target.value)
+  }
+
   return (
     <>
       <QuizBackground BackgroundImage={db.bg}>
+        <Head>
+          <title>Quiz Star Wars</title>
+        </Head>
         <QuizLogo />
         <QuizContainer >
 
@@ -17,14 +39,10 @@ export default function Home() {
             <Widget.Header><h1>{db.title}</h1></Widget.Header>
             <Widget.Content><p>{db.description}</p></Widget.Content>
 
-            <form>
-              <input 
-                type="text"
-                placeholder="Digite seu nome padalwan :)"
-                required
-              />
+            <form onSubmit={handleEventSubmit}>
+              <Input onChange={handleChange} />
 
-              <button type="submit" id="play" name="play">Jogar</button>
+              <Button type="submit">Jogar</Button>
             </form>
           </Widget>
 

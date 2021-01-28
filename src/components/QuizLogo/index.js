@@ -1,7 +1,19 @@
-import styled from 'styled-components';
-
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+Logo.propTypes = { className: PropTypes.string.isRequired };
+
+const QuizLogo = styled(Logo)`
+  display: block;
+  margin: 1rem 18%;
+
+  margin-left: ${props => props.quiz ? '6.5rem' : ''};
+
+  @media screen and (max-width: 500px) { margin: 0 }
+`;
+
+export default QuizLogo;
 
 function Logo({ className }) {
   return (
@@ -28,18 +40,3 @@ function Logo({ className }) {
     </svg>
   );
 }
-
-Logo.propTypes = {
-  className: PropTypes.string.isRequired,
-};
-
-const QuizLogo = styled(Logo)`
-  display: block;
-  margin-top: 2rem;
-  margin-left: 15rem;
-  @media screen and (max-width: 500px) {
-    margin: 0;
-  }
-`;
-
-export default QuizLogo;

@@ -1,5 +1,4 @@
-
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   * { 
@@ -8,7 +7,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box
   }
 
-  html, body { min-height: 100vh }
+  html, body { 
+    font-family: "Lato", sans-serif;
+    min-height: 100vh 
+  }
 
   body {
     display: flex;

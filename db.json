@@ -4,15 +4,15 @@
   "description": "Teste os seus conhecimentos sobre o universo de Star Wars",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://jovemnerd.com.br/wp-content/uploads/2019/01/luke-no-no.gif",
+      "title": "O que faz Lucky agir dessa maneira ?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Levou um spoiler.",
+        "Descobre que seu mestre morreu.",
+        "Não fez a Imersão React.",
+        "Descobre quem é seu pai."
       ]
     },
     {
