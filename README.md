@@ -36,6 +36,8 @@
   ![VSCode](https://img.shields.io/badge/-VSCode-0085D1?style=flat-square&logo=visual-studio-code&logoColor=white)
   ![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
+## Master
+
 <table>
   <tr>
     <td align="center"><a href="http://youtube.com/c/DevSoutinho"><img src="https://avatars.githubusercontent.com/u/13791385?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mario Souto</b></sub></a><br /><a href="https://github.com/alura-challenges/aluraquiz-base/commits?author=omariosouto" title="Code">💻</a></td>
