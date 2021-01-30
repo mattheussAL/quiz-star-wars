@@ -2,6 +2,7 @@
   <a href="https://github.com/mattheussAL">Challenge Star Wars</a>
 </h1>
 
+
 <img src="https://github.com/mattheussAL/quiz-star-wars/blob/main/.github/home.PNG" width="1000" height="500">
 
 ## How Staring
@@ -9,7 +10,7 @@
 <div>
   
   ```
-  git clone https://github.com/mattheussAL/quiz-star-wars
+  git clone https://github.com/mattheussAL/quiz-star-wars.git
   ```
 
   ## Start project in your machine
