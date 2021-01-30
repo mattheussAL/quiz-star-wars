@@ -1,28 +1,62 @@
 {
-  "bg": "https://cdn.hipwallpaper.com/i/19/0/ZgqA4s.jpg",
+  "bg": "https://downloadwap.com/thumbs2/wallpapers/p2ls/new/37/2hfybiqr.jpg",
   "title": "Desafio Star Wars",
   "description": "Teste os seus conhecimentos sobre o universo de Star Wars",
   "questions": [
     {
       "image": "https://jovemnerd.com.br/wp-content/uploads/2019/01/luke-no-no.gif",
-      "title": "O que faz Lucky agir dessa maneira ?",
+      "title": "O que faz Lucke agir dessa maneira ?",
       "description": "Essa é pra aquecer",
       "answer": 3,
       "alternatives": [
-        "Levou um spoiler.",
-        "Descobre que seu mestre morreu.",
-        "Não fez a Imersão React.",
-        "Descobre quem é seu pai."
+        "  Levou um spoiler.",
+        " Descobre que seu mestre morreu.",
+        " Não fez a Imersão React.",
+        " Descobre quem é seu pai."
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://i.pinimg.com/originals/87/29/5b/87295b17aa05aaa22730a0b3df07dc81.gif",
+      "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         " Mustafar",
+         " Tattoine",
+         " Corunscant",
+         " Dagobah"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/b4/76/e7/b476e7902b0d7d0ee1c0a92e9194926d.gif",
+      "title": "Qual é a cor do sabre de Darth Vader",
+      "answer": 1,
+      "alternatives": [
+         " Azul.",
+         " Vermelho.",
+         " Roxo.",
+         " Ele não possui um sabre de luz."
+      ]
+    },
+    {
+      "image": "https://img.cinemablend.com/filter:scale/cb/b/d/3/3/1/0/bd33106f9f03a21ae77a9d49cd0a547e0deea9679f3931f103c8a573ca79aefb.jpg?mw=600",
+      "title": "Lucke e Leia são ?",
+      "answer": 3,
+      "alternatives": [
+         " Primos.",
+         " Namorados.",
+         " Amigos.",
+         " Irmãos."
+      ]
+    },
+    {
+      "image": "https://moseisleychronicles.files.wordpress.com/2015/11/untitled-215.gif",
+      "title": "Esse famoso droid se chama ?",
+      "answer": 1,
+      "alternatives": [
+         " C4T5.",
+         " R2D2",
+         " C3PO.",
+         " D2R2."
       ]
     }
   ],

@@ -62,6 +62,11 @@ Widget.Content = styled.div`
       }
     }
   }
+
+  img {
+    width: 100%;
+    padding-left: -2px;
+  }
 `;
 
 Widget.Topic = styled.a`
