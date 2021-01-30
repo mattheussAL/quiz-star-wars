@@ -4,14 +4,15 @@
 
 <img src="https://github.com/mattheussAL/quiz-star-wars/blob/main/.github/home.PNG" width="1000" height="500">
 
-<div>
-  ## Git Clone
+## How Staring
 
+<div>
+  
   ```
   git clone https://github.com/mattheussAL/quiz-star-wars
   ```
 
-  ## Starting
+  ## Start project in your machine
   ``` 
     npm install
     npm run dev
