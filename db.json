@@ -1,5 +1,6 @@
 {
   "bg": "https://downloadwap.com/thumbs2/wallpapers/p2ls/new/37/2hfybiqr.jpg",
+  "bg_two": "https://www.proibidoler.com/wp-content/uploads/2019/11/star_wars_the_force_unleashed_2.jpg",
   "title": "Desafio Star Wars",
   "description": "Teste os seus conhecimentos sobre o universo de Star Wars",
   "questions": [
@@ -10,14 +11,15 @@
       "answer": 3,
       "alternatives": [
         "  Levou um spoiler.",
-        " Descobre que seu mestre morreu.",
-        " Não fez a Imersão React.",
-        " Descobre quem é seu pai."
+        "  Descobre que seu mestre morreu.",
+        "  Não fez a Imersão React.",
+        "  Descobre quem é seu pai."
       ]
     },
     {
       "image": "https://i.pinimg.com/originals/87/29/5b/87295b17aa05aaa22730a0b3df07dc81.gif",
       "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
+      "description": "Eai Jedi sabe ?",
       "answer": 0,
       "alternatives": [
          " Mustafar",
@@ -30,6 +32,7 @@
       "image": "https://i.pinimg.com/originals/b4/76/e7/b476e7902b0d7d0ee1c0a92e9194926d.gif",
       "title": "Qual é a cor do sabre de Darth Vader",
       "answer": 1,
+      "description": "Que a força esteja cm você !",
       "alternatives": [
          " Azul.",
          " Vermelho.",
@@ -40,6 +43,7 @@
     {
       "image": "https://img.cinemablend.com/filter:scale/cb/b/d/3/3/1/0/bd33106f9f03a21ae77a9d49cd0a547e0deea9679f3931f103c8a573ca79aefb.jpg?mw=600",
       "title": "Lucke e Leia são ?",
+      "description": "Não, eu sou seu pai !",
       "answer": 3,
       "alternatives": [
          " Primos.",
@@ -51,7 +55,8 @@
     {
       "image": "https://moseisleychronicles.files.wordpress.com/2015/11/untitled-215.gif",
       "title": "Esse famoso droid se chama ?",
-      "answer": 1,
+      "description": "Quando o deixei, eu era só o aprendiz; agora eu sou o mestre",
+      "answer": 2,
       "alternatives": [
          " C4T5.",
          " R2D2",
@@ -61,7 +66,9 @@
     }
   ],
   "external": [
-    ""
+    "https://quiz-cavaleiro-zodiaco.vercel.app",
+    "https://flash-quiz-next.davidlpc1.vercel.app",
+    "https://harry-potter-quiz.lucianoweslen11.vercel.app"
   ],
   "theme": {
     "colors": {
